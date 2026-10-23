@@ -1,0 +1,40 @@
+{
+  "name": "@local/dsh-outbound-proxy",
+  "version": "1.2.0",
+  "private": true,
+  "description": "Route DeepSeek Harness outbound HTTP(S) through a local HTTP proxy; the port follows the launcher environment unless the row overrides it.",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "README.md",
+    "INSTALL.md",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "license": "AGPL-3.0-or-later",
+  "scripts": {
+    "test": "node --test tests/outbound-proxy-config.test.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dax233/dsh-outbound-proxy.git"
+  },
+  "homepage": "https://github.com/Dax233/dsh-outbound-proxy#readme",
+  "bugs": {
+    "url": "https://github.com/Dax233/dsh-outbound-proxy/issues"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

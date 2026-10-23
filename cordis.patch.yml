@@ -1,0 +1,10 @@
+- insert:
+    - id: outbound-proxy
+      name: '@local/dsh-outbound-proxy'
+      config:
+        enabled: true
+        # proxyUrl is device-specific and intentionally left out: the plugin
+        # adopts HTTPS_PROXY/HTTP_PROXY from the launcher (~/.dsh/.env), then
+        # falls back to http://127.0.0.1:7890. Uncomment to override per device.
+        # proxyUrl: 'http://127.0.0.1:7890'
+        noProxy: 'deepseek.com,opencode.ai'
