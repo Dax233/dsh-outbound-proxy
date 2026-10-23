@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "本机出站代理",
+    "description": "让 Harness 的网页请求经由本机 HTTP 代理发出（端口跟随启动器环境变量 HTTP_PROXY/HTTPS_PROXY，缺省 127.0.0.1:7890），从而访问境外网页与 HTTP MCP 服务；模型与账号流量保持直连。"
+  }
+}

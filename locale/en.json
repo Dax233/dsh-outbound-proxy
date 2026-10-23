@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Local Outbound Proxy",
+    "description": "Routes Harness web requests through a local HTTP proxy (follows HTTP_PROXY/HTTPS_PROXY from the launcher, default 127.0.0.1:7890) so overseas pages and HTTP MCP servers are reachable, while model and account traffic stay direct."
+  }
+}
