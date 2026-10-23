@@ -22,7 +22,7 @@
       "patch": "./cordis.patch.yml"
     }
   },
-  "license": "AGPL-3.0-or-later",
+  "license": "MIT",
   "scripts": {
     "test": "node --test tests/outbound-proxy-config.test.mjs"
   },
